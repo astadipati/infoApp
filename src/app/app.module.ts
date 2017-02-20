@@ -1,3 +1,4 @@
+import { UserPage } from './../pages/users/user/user';
 
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -9,7 +10,8 @@ import { UsersPage } from './../pages/users/users';
   declarations: [
     MyApp,
     HomePage,
-    UsersPage
+    UsersPage,
+    UserPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,7 +20,8 @@ import { UsersPage } from './../pages/users/users';
   entryComponents: [
     MyApp,
     HomePage,
-    UsersPage
+    UsersPage,
+    UserPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
